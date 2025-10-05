@@ -1,0 +1,19 @@
+# Product Properties for OnePlus CPH2551
+
+# Camera
+ro.product.camera.count=4
+
+# Display
+ro.sf.lcd_density=440
+
+# Fingerprint
+ro.hardware.fingerprint=fpc
+
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# NFC
+ro.nfc.port=I2C
+
+# Priv-app permissions
+ro.control_privapp_permissions=log

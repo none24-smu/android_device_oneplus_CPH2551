@@ -1,0 +1,5 @@
+# All unpinned blobs below are extracted from CPH2551
+# Device tree for OnePlus CPH2551
+
+# Add proprietary files here after extraction
+# Format: path/to/file|sha1sum (optional)

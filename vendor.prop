@@ -1,0 +1,62 @@
+# Vendor Properties for OnePlus CPH2551
+
+# Audio
+ro.vendor.audio.sdk.fluencetype=fluence
+persist.vendor.audio.fluence.voicecall=true
+persist.vendor.audio.fluence.voicerec=false
+persist.vendor.audio.fluence.speaker=true
+
+# Bluetooth
+ro.vendor.bluetooth.wipower=false
+persist.vendor.qcom.bluetooth.soc=hastings
+
+# Camera
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.android.camera
+
+# Crypto
+ro.crypto.volume.filenames_mode=aes-256-cts
+
+# DPM
+persist.vendor.dpm.feature=11
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Graphics
+debug.sf.hw=1
+ro.opengles.version=196610
+vendor.display.comp_mask=0
+vendor.display.disable_excl_rect=0
+vendor.display.disable_excl_rect_partial_fb=1
+vendor.display.disable_hw_recovery_dump=1
+vendor.display.disable_offline_rotator=1
+vendor.display.disable_scaler=0
+vendor.display.enable_default_color_mode=1
+vendor.display.enable_optimize_refresh=1
+vendor.gralloc.disable_ubwc=0
+
+# Keymaster
+ro.hardware.keystore_desede=true
+
+# Media
+debug.stagefright.ccodec=4
+debug.stagefright.omx_default_rank=0
+
+# Perf
+ro.vendor.qti.core_ctl_max_cpu=4
+ro.vendor.qti.core_ctl_min_cpu=2
+
+# Radio
+persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.procedure_bytes=SKIP
+
+# Sensors
+persist.vendor.sensors.allow_non_default_discovery=true
+persist.vendor.sensors.sync_request=true
+
+# USB
+vendor.usb.diag.func.name=ffs
+vendor.usb.use_ffs_mtp=1
+
+# WiFi
+wifi.interface=wlan0
