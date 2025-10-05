@@ -6,17 +6,12 @@
 | :---------------------- | :----------------------------------------------- |
 | Codename                | CPH2551 (OP5973L1)                               |
 | Chipset                 | Qualcomm SM8550 Snapdragon 8 Gen 2 (4 nm)        |
-| CPU                     | Octa-core Kryo                                   |
-| GPU                     | Adreno 740                                       |
-| Memory                  | 8/12/16 GB RAM                                   |
-| Shipped Android Version | Android 14                                       |
-| Storage                 | 128/256/512 GB UFS 4.0                           |
-| Battery                 | Non-removable Li-Po                              |
-| Display                 | AMOLED, 120Hz                                    |
+| Memory                  | 16 GB RAM                                        |
+| Shipped Android Version | Android 13                                       |
 
 ## Device Picture
 
-![OnePlus CPH2551](https://via.placeholder.com/400x800?text=OnePlus+CPH2551)
+![OnePlus CPH2551](https://oasis.opstatics.com/content/dam/oasis/page/2024/global/product/open/red-specs.png)
 
 ## Quick Start
 
