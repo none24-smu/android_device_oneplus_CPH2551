@@ -9,10 +9,12 @@
 - [x] Stock ROM extraction (payload.bin → partitions)
 - [x] Boot image analysis
 - [x] Fstab extraction from vendor_boot
+- [x] Kernel source cloned (OnePlus official SM8550)
+- [x] Vendor blob list generated (848 files)
+- [x] Extraction scripts created
 
 ### In Progress ⏳
-- Kernel source setup (cloning from OnePlus repository)
-- Vendor blob identification and extraction
+- Vendor blob extraction from device (ready to run)
 
 ### Stock ROM Analysis
 **Extracted partitions:**
