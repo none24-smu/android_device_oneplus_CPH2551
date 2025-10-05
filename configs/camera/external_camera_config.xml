@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright (C) 2025 The LineageOS Project
+
+    SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- External USB camera configuration -->
+<ExternalCamera>
+    <Provider>
+        <id>0</id>
+        <model>USB Camera</model>
+        <deviceVersion>1.0</deviceVersion>
+        <cameraIdOffset>100</cameraIdOffset>
+    </Provider>
+</ExternalCamera>

@@ -9,69 +9,51 @@
 | Memory                  | 16 GB RAM                                        |
 | Shipped Android Version | Android 13                                       |
 
-## Device Picture
 
-![OnePlus CPH2551](https://oasis.opstatics.com/content/dam/oasis/page/2024/global/product/open/red-specs.png)
+## Building
 
-## Quick Start
+### Extract Vendor Blobs
 
-### 1. Run Setup Script
-
-This will extract the stock ROM and clone the kernel source:
+The extract-files.sh script requires LineageOS extract-utils. Run this from within a LineageOS build environment:
 
 ```bash
-cd /media/smuserverv1/SSD\ RAID/android_device_oneplus_CPH2551
-./scripts/setup.sh
+./extract-files.sh
 ```
 
-### 2. Mount Stock Images
+Alternatively, extract from stock ROM images. Mount the vendor and odm partitions, then:
 
 ```bash
-sudo ./scripts/mount_images.sh
+./extract-files.sh /path/to/mounted/stock
 ```
 
-### 3. Extract Vendor Blobs
+### Build LineageOS
 
-After populating `proprietary-files.txt`:
-
-```bash
-./extract-files.sh /media/smuserverv1/SSD\ RAID/CPH2551_mounted
-```
-
-### 4. Unmount Images
-
-```bash
-sudo ./scripts/umount_images.sh
-```
-
-## Full Build Instructions
-
-### Initialize the LineageOS source repository
+Initialize the LineageOS source repository:
 
 ```bash
 repo init -u https://github.com/LineageOS/android.git -b lineage-22.2 --git-lfs
 ```
 
-### Sync the repository
+Sync the repository:
 
 ```bash
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 ```
 
-### Clone this device tree
+Clone this device tree:
 
 ```bash
 git clone https://github.com/none24-smu/android_device_oneplus_CPH2551.git device/oneplus/CPH2551
 ```
 
-### Clone kernel source
+Clone kernel source:
 
 ```bash
 git clone https://github.com/OnePlusOSS/android_kernel_common_oneplus_sm8550.git \
     -b oneplus/sm8550_v_15.0.0_oneplus_open kernel/oneplus/sm8550
 ```
 
-### Clone vendor blobs (after creating vendor repo)
+Clone vendor blobs:
 
 ```bash
 git clone https://github.com/none24-smu/android_vendor_oneplus_CPH2551.git vendor/oneplus/CPH2551
@@ -85,16 +67,6 @@ lunch lineage_CPH2551-userdebug
 mka bacon -j$(nproc --all)
 ```
 
-## Development Guide
-
-For a detailed step-by-step guide to completing this device tree, see [BUILDING.md](BUILDING.md).
-
-This includes:
-- Kernel configuration
-- Vendor blob extraction
-- Hardware-specific configurations (Audio, Camera, Sensors, etc.)
-- SELinux policies
-- Testing and debugging
 
 ## Copyright
 

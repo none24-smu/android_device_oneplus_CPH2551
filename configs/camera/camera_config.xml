@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2025 The LineageOS Project
+
+    SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- Camera configuration for OnePlus CPH2551 (Kalama) -->
+<CameraConfigurationRoot>
+    <CameraModuleConfig ModuleName="QTICamera">
+        <CameraId>0</CameraId>
+        <SensorName>IMX890</SensorName>
+        <ActuatorName>dw9800w</ActuatorName>
+        <EepromName>ov64b</EepromName>
+        <FlashName>pmic</FlashName>
+        <ChromatixName>imx890_chromatix</ChromatixName>
+        <Position>BACK</Position>
+        <MountAngle>90</MountAngle>
+        <CSIInfo CSIDCore="0" LaneMask="0x1F" LaneAssign="0x4320" ComboMode="0"/>
+        <LensInfo FocalLength="5.58" FNumber="1.8" TotalFocusDistance="2.0" HorizontalViewAngle="84.0" VerticalViewAngle="64.0" MinFocusDistance="0.1"/>
+    </CameraModuleConfig>
+
+    <CameraModuleConfig ModuleName="QTICamera">
+        <CameraId>1</CameraId>
+        <SensorName>IMX615</SensorName>
+        <ActuatorName>ak7377a</ActuatorName>
+        <EepromName>imx615</EepromName>
+        <ChromatixName>imx615_chromatix</ChromatixName>
+        <Position>FRONT</Position>
+        <MountAngle>270</MountAngle>
+        <CSIInfo CSIDCore="1" LaneMask="0x18" LaneAssign="0x4320" ComboMode="0"/>
+        <LensInfo FocalLength="2.96" FNumber="2.2" TotalFocusDistance="1.97" HorizontalViewAngle="80.0" VerticalViewAngle="63.0" MinFocusDistance="0.2"/>
+    </CameraModuleConfig>
+
+    <CameraModuleConfig ModuleName="QTICamera">
+        <CameraId>2</CameraId>
+        <SensorName>IMX581</SensorName>
+        <ActuatorName>ak7377a</ActuatorName>
+        <EepromName>imx581</EepromName>
+        <ChromatixName>imx581_chromatix</ChromatixName>
+        <Position>BACK</Position>
+        <MountAngle>90</MountAngle>
+        <CSIInfo CSIDCore="2" LaneMask="0x1F" LaneAssign="0x4320" ComboMode="0"/>
+        <LensInfo FocalLength="2.2" FNumber="2.2" TotalFocusDistance="1.97" HorizontalViewAngle="115.0" VerticalViewAngle="85.0" MinFocusDistance="0.04"/>
+    </CameraModuleConfig>
+
+    <CameraModuleConfig ModuleName="QTICamera">
+        <CameraId>3</CameraId>
+        <SensorName>IMX709</SensorName>
+        <ActuatorName>ak7377a</ActuatorName>
+        <EepromName>imx709</EepromName>
+        <ChromatixName>imx709_chromatix</ChromatixName>
+        <Position>BACK</Position>
+        <MountAngle>90</MountAngle>
+        <CSIInfo CSIDCore="3" LaneMask="0x1F" LaneAssign="0x4320" ComboMode="0"/>
+        <LensInfo FocalLength="16.7" FNumber="2.5" TotalFocusDistance="4.0" HorizontalViewAngle="30.0" VerticalViewAngle="22.0" MinFocusDistance="0.3"/>
+    </CameraModuleConfig>
+</CameraConfigurationRoot>

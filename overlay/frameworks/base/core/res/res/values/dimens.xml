@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2025 The LineageOS Project
+
+    SPDX-License-Identifier: Apache-2.0
+-->
+
+<resources>
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height_default">28dp</dimen>
+    <dimen name="status_bar_height_portrait">28dp</dimen>
+    <dimen name="status_bar_height_landscape">28dp</dimen>
+
+    <!-- Radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">125px</dimen>
+    <dimen name="rounded_corner_radius_top">125px</dimen>
+    <dimen name="rounded_corner_radius_bottom">125px</dimen>
+
+    <!-- Default radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius_default">125px</dimen>
+
+    <!-- Height of bottom navigation / gesture bar -->
+    <dimen name="navigation_bar_frame_height">20dp</dimen>
+    <dimen name="navigation_bar_gesture_height">20dp</dimen>
+
+    <!-- Quick Settings quick panel padding bottom -->
+    <dimen name="qs_panel_padding_bottom">48dp</dimen>
+
+</resources>

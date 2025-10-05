@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Copyright (C) 2025 The LineageOS Project
+
+    SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- These are the hardware components that all handheld devices
+     must include. Devices with optional hardware must also include extra
+     hardware files, per the comments below.
+
+     OnePlus CPH2551 (Kalama) hardware features
+-->
+<permissions>
+    <!-- Standard Android hardware features -->
+    <feature name="android.hardware.audio.output" />
+    <feature name="android.hardware.bluetooth" />
+    <feature name="android.hardware.bluetooth_le" />
+    <feature name="android.hardware.camera" />
+    <feature name="android.hardware.camera.any" />
+    <feature name="android.hardware.camera.autofocus" />
+    <feature name="android.hardware.camera.flash" />
+    <feature name="android.hardware.camera.front" />
+
+    <!-- Fingerprint sensor -->
+    <feature name="android.hardware.fingerprint" />
+
+    <!-- GPS -->
+    <feature name="android.hardware.location" />
+    <feature name="android.hardware.location.gps" />
+    <feature name="android.hardware.location.network" />
+
+    <!-- Microphone -->
+    <feature name="android.hardware.microphone" />
+
+    <!-- NFC -->
+    <feature name="android.hardware.nfc" />
+    <feature name="android.hardware.nfc.hce" />
+    <feature name="android.hardware.nfc.hcef" />
+    <feature name="android.hardware.nfc.uicc" />
+
+    <!-- Sensors -->
+    <feature name="android.hardware.sensor.accelerometer" />
+    <feature name="android.hardware.sensor.barometer" />
+    <feature name="android.hardware.sensor.compass" />
+    <feature name="android.hardware.sensor.gyroscope" />
+    <feature name="android.hardware.sensor.light" />
+    <feature name="android.hardware.sensor.proximity" />
+    <feature name="android.hardware.sensor.stepcounter" />
+    <feature name="android.hardware.sensor.stepdetector" />
+
+    <!-- Telephony -->
+    <feature name="android.hardware.telephony" />
+    <feature name="android.hardware.telephony.gsm" />
+    <feature name="android.hardware.telephony.ims" />
+    <feature name="android.hardware.telephony.cdma" />
+
+    <!-- Touchscreen -->
+    <feature name="android.hardware.touchscreen" />
+    <feature name="android.hardware.touchscreen.multitouch" />
+    <feature name="android.hardware.touchscreen.multitouch.distinct" />
+    <feature name="android.hardware.touchscreen.multitouch.jazzhand" />
+
+    <!-- USB -->
+    <feature name="android.hardware.usb.accessory" />
+    <feature name="android.hardware.usb.host" />
+
+    <!-- Vulkan -->
+    <feature name="android.hardware.vulkan.compute" />
+    <feature name="android.hardware.vulkan.level" version="1" />
+    <feature name="android.hardware.vulkan.version" version="4206595" />
+
+    <!-- WiFi -->
+    <feature name="android.hardware.wifi" />
+    <feature name="android.hardware.wifi.direct" />
+    <feature name="android.hardware.wifi.aware" />
+    <feature name="android.hardware.wifi.passpoint" />
+    <feature name="android.hardware.wifi.rtt" />
+
+    <!-- Software features -->
+    <feature name="android.software.app_widgets" />
+    <feature name="android.software.connectionservice" />
+    <feature name="android.software.ipsec_tunnels" />
+    <feature name="android.software.midi" />
+    <feature name="android.software.sip" />
+    <feature name="android.software.sip.voip" />
+    <feature name="android.software.verified_boot" />
+    <feature name="android.software.vulkan.deqp.level" version="0" />
+    <feature name="android.software.opengles.deqp.level" version="0" />
+</permissions>

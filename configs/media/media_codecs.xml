@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+    Copyright (C) 2025 The LineageOS Project
+
+    SPDX-License-Identifier: Apache-2.0
+-->
+
+<MediaCodecs>
+    <Settings>
+        <Setting name="max-video-encoder-input-buffers" value="11" />
+    </Settings>
+    <Encoders>
+        <!-- Audio Encoders -->
+        <MediaCodec name="OMX.qcom.audio.encoder.aac" type="audio/mp4a-latm" />
+        <MediaCodec name="OMX.qcom.audio.encoder.qcelp13" type="audio/qcelp" />
+        <MediaCodec name="OMX.qcom.audio.encoder.evrc" type="audio/evrc" />
+        <MediaCodec name="OMX.qcom.audio.encoder.amrnb" type="audio/3gpp" />
+        <MediaCodec name="OMX.qcom.audio.encoder.amrwb" type="audio/amr-wb" />
+        
+        <!-- Video Encoders -->
+        <MediaCodec name="OMX.qcom.video.encoder.avc" type="video/avc" >
+            <Limit name="size" min="96x96" max="4096x2176" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="1" max="972000" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-240" />
+            <Limit name="concurrent-instances" max="16" />
+        </MediaCodec>
+        <MediaCodec name="OMX.qcom.video.encoder.hevc" type="video/hevc" >
+            <Limit name="size" min="96x96" max="4096x2176" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="1" max="972000" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-240" />
+            <Limit name="concurrent-instances" max="16" />
+        </MediaCodec>
+    </Encoders>
+    <Decoders>
+        <!-- Audio Decoders -->
+        <MediaCodec name="OMX.qcom.audio.decoder.aac" type="audio/mp4a-latm" />
+        <MediaCodec name="OMX.qcom.audio.decoder.mp3" type="audio/mpeg" />
+        <MediaCodec name="OMX.qcom.audio.decoder.amrnb" type="audio/3gpp" />
+        <MediaCodec name="OMX.qcom.audio.decoder.amrwb" type="audio/amr-wb" />
+        
+        <!-- Video Decoders -->
+        <MediaCodec name="OMX.qcom.video.decoder.avc" type="video/avc" >
+            <Limit name="size" min="96x96" max="4096x2176" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="1" max="972000" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-240" />
+            <Limit name="concurrent-instances" max="16" />
+        </MediaCodec>
+        <MediaCodec name="OMX.qcom.video.decoder.hevc" type="video/hevc" >
+            <Limit name="size" min="96x96" max="4096x2176" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="1" max="972000" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-240" />
+            <Limit name="concurrent-instances" max="16" />
+        </MediaCodec>
+        <MediaCodec name="OMX.qcom.video.decoder.vp8" type="video/x-vnd.on2.vp8" >
+            <Limit name="size" min="96x96" max="4096x2176" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="1" max="972000" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-240" />
+            <Limit name="concurrent-instances" max="16" />
+        </MediaCodec>
+        <MediaCodec name="OMX.qcom.video.decoder.vp9" type="video/x-vnd.on2.vp9" >
+            <Limit name="size" min="96x96" max="4096x2176" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" min="1" max="972000" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-240" />
+            <Limit name="concurrent-instances" max="16" />
+        </MediaCodec>
+    </Decoders>
+</MediaCodecs>

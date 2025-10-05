@@ -1,20 +1,25 @@
-# Development Progress for OnePlus CPH2551
+# Development Progress
 
 ## Current Status
 
-### Completed ✓
-- [x] Initial device tree structure
-- [x] Board configuration for Kalama platform
-- [x] Product makefiles for LineageOS 22.2
-- [x] Stock ROM extraction (payload.bin → partitions)
-- [x] Boot image analysis
-- [x] Fstab extraction from vendor_boot
-- [x] Kernel source cloned (OnePlus official SM8550)
-- [x] Vendor blob list generated (848 files)
-- [x] Extraction scripts created
+Device tree is functionally complete. All hardware configurations are in place including audio, camera, display, sensors, WiFi, Bluetooth, and telephony.
 
-### In Progress ⏳
-- Vendor blob extraction from device (ready to run)
+### Completed
+- Initial device tree structure
+- Board configuration for Kalama platform  
+- Product makefiles for LineageOS 22.2
+- Stock ROM extraction and analysis
+- Kernel source setup (OnePlus SM8550)
+- Vendor blob list (2749 files)
+- All init scripts and configurations
+- Hardware HAL configurations
+- SELinux policies
+- Framework overlays
+- Recovery configuration
+
+### Remaining
+- Vendor blob extraction (requires LineageOS build environment)
+- Initial build and hardware testing
 
 ### Stock ROM Analysis
 **Extracted partitions:**
@@ -32,17 +37,7 @@
 - Kernel modules in vendor_boot ramdisk
 - OnePlus-specific modules present (device_info, boot_mode, etc.)
 
+
 ## Next Steps
 
-1. Complete kernel setup and configuration
-2. Start vendor blob extraction
-3. Extract init scripts from vendor partition
-4. Configure audio subsystem
-5. Set up camera HAL
-
-## Tools Downloaded
-- payload-dumper-go v1.3.0
-- Android mkbootimg tools
-
----
-*Last updated: Work in progress*
+Extract vendor blobs using LineageOS extract-files.sh script, then build and test on device.
