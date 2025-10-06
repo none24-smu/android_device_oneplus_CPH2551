@@ -88,23 +88,8 @@ TARGET_RECOVERY_UI_MARGIN_HEIGHT := 90
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
-# Recovery - Encryption
-BOARD_USES_QCOM_FBE_DECRYPTION := true
+# Recovery - Encryption (LineageOS Recovery handles FBE automatically)
 BOARD_USES_METADATA_PARTITION := true
-TW_INCLUDE_CRYPTO := true
-TW_INCLUDE_CRYPTO_FBE := true
-TW_INCLUDE_FBE_METADATA_DECRYPT := true
-
-# Recovery - Additional flags
-TARGET_RECOVERY_DEVICE_MODULES += \
-    android.hidl.base@1.0 \
-    libion \
-    libxml2
-
-TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.base@1.0.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
