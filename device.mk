@@ -250,7 +250,8 @@ PRODUCT_BOOT_JARS += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    hardware/qcom-caf/wlan
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oneplus/CPH2551/CPH2551-vendor.mk)
