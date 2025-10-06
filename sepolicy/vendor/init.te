@@ -1,0 +1,26 @@
+# Init
+allow init vendor_file:file execute;
+allow init vendor_toolbox_exec:file rx_file_perms;
+
+# Allow init to mount vendor partitions
+allow init vendor_file:dir mounton;
+
+# Allow init to write to sysfs
+allow init sysfs:file w_file_perms;
+allow init sysfs_leds:file w_file_perms;
+allow init sysfs_leds:lnk_file read;
+
+# Allow init to set vendor properties
+set_prop(init, vendor_default_prop)
+set_prop(init, vendor_usb_prop)
+set_prop(init, vendor_wifi_prop)
+
+# Allow init to create directories in /mnt/vendor
+allow init mnt_vendor_file:dir create_dir_perms;
+
+# Allow init to relabel files
+allow init tmpfs:lnk_file relabelfrom;
+allow init vendor_file:lnk_file relabelto;
+
+# Allow init to execute modprobe
+allow init vendor_modprobe_exec:file rx_file_perms;

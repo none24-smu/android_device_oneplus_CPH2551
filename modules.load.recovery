@@ -1,0 +1,4 @@
+# Kernel modules to load in recovery
+# Essential modules only
+msm_geni_serial.ko
+qcom_edac.ko
