@@ -13,12 +13,14 @@ soong_namespace {
 cc_library_static {
     name: "libinit_CPH2551",
     srcs: ["init/init_CPH2551.cpp"],
-    include_dirs: [
-        "system/core/base/include",
-        "system/core/init",
-    ],
-    shared_libs: [
+    whole_static_libs: [
         "libbase",
+    ],
+    header_libs: [
+        "libbase_headers",
+    ],
+    include_dirs: [
+        "system/core/init",
     ],
     recovery_available: true,
 }
