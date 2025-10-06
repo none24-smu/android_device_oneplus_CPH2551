@@ -40,10 +40,6 @@
 
     <!-- Enable doze mode -->
     <bool name="config_enableAutoPowerModes">true</bool>
-    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
-
-    <!-- Enable WiFi Display -->
-    <bool name="config_enableWifiDisplay">true</bool>
 
     <!-- Enable NetworkLocationProvider -->
     <bool name="config_enableNetworkLocationOverlay">true</bool>
