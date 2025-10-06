@@ -47,11 +47,7 @@ BOARD_KERNEL_IMAGE_NAME := Image
 TARGET_KERNEL_CONFIG := vendor/kalama-qgki_defconfig
 TARGET_KERNEL_SOURCE := kernel/oneplus/sm8550
 
-# Kernel modules
-BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
-BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
-NEED_KERNEL_MODULE_SYSTEM := true
+# Kernel modules - Stock kernel has everything built-in
 
 # Platform
 TARGET_BOARD_PLATFORM := kalama
